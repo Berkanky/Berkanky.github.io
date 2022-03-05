@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Weather</title>
+</head>
+<body>
+<div id="body">
+    <div class="container pt-5" id="bodyfirst">
+        <div class="row pt-5">
+            <div class="col-md-6 mx-auto" id="bodytwo">
+                <h1 id="baslik"><a href="https://tr.wikipedia.org/wiki/" target="_blank" id="citylink">Weather</a></h1>
+                <form id="form-submit">
+                    <div class="form-group">
+                        <label></label>
+                        <div class="searchdiv">
+                            <input type="text" class="form-control mt-1" id="city" placeholder="City Name">
+                            <a><img src="searchicon.png" alt="" id="searchicon"></a>
+                        </div>
+
+                        <button type="submit" class="buton btn btn-primary mt-4" id="buton1" style="display: none;">Submit</button>
+                    </div>
+                </form>
+                <div class="values">
+                    <p id="city-name"></p>
+                    <p id="city-weather"></p>
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                    <i class='sembol fas fa-cloud-moon' style='font-size:36px;color:paleturquoise' id="bulut"></i>
+                    <i class='sembol far fa-snowflake' style='font-size:36px;color:paleturquoise' id="kar"></i>
+                    <i class='sembol fas fa-cloud-rain' style='font-size:36px;color:paleturquoise' id="yagmur"></i>
+                    <i class='sembol fas fa-cloud-sun' style='font-size:36px;color:paleturquoise' id="clear"></i>
+                    <i class='sembol fas fa-smog' style='font-size:36px;color:paleturquoise' id="smog"></i>
+
+                    <div id="windspeed">
+                        <p id="city-wind"></p>
+                        <p id="city-winddeg"></p>
+                        <b class='fas fa-wind' style='font-size:36px;color:paleturquoise' id="winddegsembol"></b>
+                        <b class='fas fa-wind' style='font-size:36px;color:paleturquoise' id="windsembol"></b>
+                    </div>
+                    <div class="row mx-auto" id="humpres">
+                        <div class="col-6">
+                            <p id="city-pressure" style="margin-left: -15px"></p>
+                            <span id="pressicon"><img src="pressure.png" alt=""></span>
+                        </div>
+                        <div class="col-6">
+                            <p id="city-humidity"></p>
+                            <span id="humidityicon"><img src="humidity.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div id="sonuc">
+                        <p id="city-temp"></p>
+                        <p id="city-tempmin"></p>
+                        <p id="city-tempmax"></p>
+                        <p id="city-feels"></p>
+                        <span style='font-size:34px;' id="celcius">&#8451;</span>
+                        <span style='font-size:34px;' id="feelcelcius">&#8451;</span>
+                        <span style='font-size:34px;' id="celciusmin">&#8451;</span>
+                        <span style='font-size:34px;' id="celciusmax">&#8451;</span>
+
+                    </div>
+                </div>
+
+                <div id="buton2div">
+                    <button type="submit" class="buton btn btn-primary mt-4" id="buton2">Back</button>
+                    <a href="https://www.google.com/maps/place/" target="_blank" id="locationclick"><l class='fas fa-search-location' style='color: white' id="location"></l></a>
+                </div>
+            </div>
+        </div>
+        <div class="alltimes">
+            <!--<div class="row pt-2 mx-auto" id="timesfirst">
+                <p id="city-timezonefirst"></p>
+            </div></-->
+
+            <div class="row pt-2 mx-auto" id="times">
+                <p id="city-timezone"></p>
+                <!--<p id="city-sunrise"></p></-->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>

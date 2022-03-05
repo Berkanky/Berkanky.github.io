@@ -1,0 +1,254 @@
+#body{
+
+    background-image: url("https://source.unsplash.com/1600x1000/?New York");
+    height: 100vh;
+}
+
+#bodytwo{
+    margin-top: 10%;
+    background-color: #000000d0;
+    border-radius: 15px;
+    padding: 5%;
+
+}
+
+#body p{
+    font-size: 22px;
+}
+
+#bodytwo p{
+    color:white;
+}
+
+#bodytwo input{
+    border-radius: 15px;
+    color:white;
+}
+
+#bodytwo h1{
+    color:white;
+    font-family: "Times New Roman";
+    font-size: 35px;
+    text-align: center;
+}
+
+#bodytwo label{
+    color:White;
+}
+
+#city{
+    background-color:#7c7c7c2b;
+    color:White;
+}
+
+#city::placeholder{
+    color:White;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#city:focus {
+    color:white;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buton{
+    margin-left: 40%;
+    background-color: white;
+    color:#000000d0;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#buton2{
+    margin-bottom: -21%;
+    margin-left: 24%;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #7c7c7c2b;
+    color:white;
+    border: 0;
+    font-weight: bolder;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+#bodytwo i{
+    color:white;
+    display:none;
+    position: absolute;
+    margin-left: 95px;
+    margin-top:-2.5%;
+}
+
+#celcius{
+    color:paleturquoise;
+    margin-left:18%;
+    display: none;
+}
+#sonuc{
+    display: inline-flex;
+    float:left;
+}
+
+#city-temp{
+    margin-top:15%;
+    font-size: 22px;
+}
+
+p{
+    font-size: 20px;
+    margin-top:3%;
+}
+
+#windsembol{
+    display: none;
+    position: absolute;
+    margin-left: 6.5%;
+    margin-top: -2.5%;
+    color: white;
+}
+#city-winddeg{
+
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -2.3%;
+}
+#winddegsembol{
+    display: none;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: -2.4%;
+}
+#city-feels{
+    position: absolute;
+    margin-left: 5.6%;
+    margin-top: 0.6%;
+    font-size: 22px;
+}
+
+#feelcelcius{
+    display: none;
+    color:paleturquoise;
+    position: absolute;
+    margin-left: 11.4%;
+}
+
+#city-tempmin{
+    position: absolute;
+    margin-left: 14%;
+    font-size: 22px;
+    margin-top: 0.6%;
+}
+
+#city-tempmax{
+    position: absolute;
+    margin-left: 22%;
+    font-size: 22px;
+    margin-top: 0.6%;
+}
+
+#celciusmin{
+    position: absolute;
+    margin-left: 19.5%;
+    display: none;
+    color:paleturquoise;
+}
+#celciusmax{
+    position: absolute;
+    margin-left: 27.4%;
+    display: none;
+    color:paleturquoise;
+}
+
+#humpres{
+
+}
+
+#city-humidity{
+    margin-left: 5px;
+}
+
+#pressicon img{
+    display: none;
+    position: absolute;
+    margin-top:-3%;
+    margin-left: 5%;
+    width:2.8%;
+}
+
+#humidityicon img{
+    display: none;
+    width:2.2%;
+    margin-top: -2.8%;
+    margin-left: 5.5%;
+    position: absolute;
+}
+
+.icon{
+    display:none;
+    color:white;
+    font-size: 25px;
+
+}
+
+#searchicon{
+    background-color: #7c7c7c2b;
+    padding: 5px;
+    border-radius: 15px;
+    width:8%;
+}
+
+.searchdiv input{
+    width:90%;
+    display: inline-flex;
+}
+
+.values{
+    margin-top:-3%;
+}
+
+#baslik a{
+    text-decoration: none;
+    color:white;
+}
+
+#location{
+    display: none;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left:10px;
+    font-size: 29px;
+}
+
+.alltimes{
+    display: none;
+}
+
+#times{
+    display:;
+    border-radius: 15px;
+    margin-top: 1%;
+    background-color: #000000d0;
+    color:White;
+    width: 10%;
+}
+#times p{
+    text-align: center;
+}
+
+#timesfirst{
+    display:;
+    border-radius: 15px;
+    margin-top: 1%;
+    background-color:#000000d0;
+    color: white;
+    width:50%;
+}
+#timesfirst p{
+    text-align: center;
+}
