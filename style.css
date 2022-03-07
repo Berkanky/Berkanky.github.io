@@ -5,11 +5,12 @@
 }
 
 #bodytwo{
-    margin-top: 10%;
+    width:59%;
+    margin-top: 5%;
     background-color: #000000d0;
     border-radius: 15px;
-    padding: 5%;
-
+    padding: 3%;
+    padding-bottom:0%;
 }
 
 #body p{
@@ -26,15 +27,14 @@
 }
 
 #bodytwo h1{
+    margin-top: 1%;
     color:white;
     font-family: "Times New Roman";
     font-size: 35px;
     text-align: center;
 }
 
-#bodytwo label{
-    color:White;
-}
+
 
 #city{
     background-color:#7c7c7c2b;
@@ -64,11 +64,8 @@
 }
 
 #buton2{
-    margin-bottom: -21%;
-    margin-left: 24%;
-    display: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
     background-color: #7c7c7c2b;
     color:white;
     border: 0;
@@ -77,28 +74,6 @@
     font-size: 20px;
 }
 
-#bodytwo i{
-    color:white;
-    display:none;
-    position: absolute;
-    margin-left: 95px;
-    margin-top:-2.5%;
-}
-
-#celcius{
-    color:paleturquoise;
-    margin-left:18%;
-    display: none;
-}
-#sonuc{
-    display: inline-flex;
-    float:left;
-}
-
-#city-temp{
-    margin-top:15%;
-    font-size: 22px;
-}
 
 p{
     font-size: 20px;
@@ -112,66 +87,23 @@ p{
     margin-top: -2.5%;
     color: white;
 }
-#city-winddeg{
-
-    position: absolute;
-    margin-left: 10%;
-    margin-top: -2.3%;
-}
 #winddegsembol{
-    display: none;
-    position: absolute;
-    margin-left: 16%;
-    margin-top: -2.4%;
-}
-#city-feels{
-    position: absolute;
-    margin-left: 5.6%;
-    margin-top: 0.6%;
-    font-size: 22px;
+
 }
 
-#feelcelcius{
-    display: none;
-    color:paleturquoise;
-    position: absolute;
-    margin-left: 11.4%;
+.windbody{
+
 }
 
-#city-tempmin{
-    position: absolute;
-    margin-left: 14%;
-    font-size: 22px;
-    margin-top: 0.6%;
-}
-
-#city-tempmax{
-    position: absolute;
-    margin-left: 22%;
-    font-size: 22px;
-    margin-top: 0.6%;
-}
-
-#celciusmin{
-    position: absolute;
-    margin-left: 19.5%;
-    display: none;
-    color:paleturquoise;
-}
-#celciusmax{
-    position: absolute;
-    margin-left: 27.4%;
-    display: none;
-    color:paleturquoise;
+#windspeed{
+    margin-top:-3%;
 }
 
 #humpres{
-
+    text-align: center;
 }
 
-#city-humidity{
-    margin-left: 5px;
-}
+
 
 #pressicon img{
     display: none;
@@ -200,7 +132,7 @@ p{
     background-color: #7c7c7c2b;
     padding: 5px;
     border-radius: 15px;
-    width:8%;
+    width:6%;
 }
 
 .searchdiv input{
@@ -218,14 +150,20 @@ p{
 }
 
 #location{
-    display: none;
-    position: absolute;
-    margin-top: 3.5%;
-    margin-left:10px;
-    font-size: 29px;
+    font-size: 20px;
+    margin-left: 3%;
 }
 
+
 .alltimes{
+    display:none;
+    text-align: center;
+    background-color:#000000d0;
+    color: white;
+    width:13%;
+    border-radius: 15px;
+}
+.alltimes div{
     display: none;
 }
 
@@ -251,4 +189,41 @@ p{
 }
 #timesfirst p{
     text-align: center;
+}
+
+.weatherdescicon{
+    text-align: center;
+}
+.weatherwinds{
+    text-align: center;
+}
+
+.temps{
+
+}
+
+.buton2divs{
+    text-align: center;
+}
+
+.buton2divs button{
+    display: none;
+}
+.buton2divs a{
+    display: none;
+}
+
+#city-icon img{
+    margin-top: -3%;
+}
+.date{
+    background-color: #000000d0;
+    text-align: center;
+    width:10%;
+    border-radius: 15px;
+}
+.date p{
+    margin-top: 5%;
+    color: white;
+    font-size: 20px;
 }
