@@ -30,58 +30,77 @@
                 </form>
                 <div class="values">
                     <p id="city-name"></p>
-                    <p id="city-weather"></p>
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                    <i class='sembol fas fa-cloud-moon' style='font-size:36px;color:paleturquoise' id="bulut"></i>
+                    <div class="weatherdescicon row">
+                        <div class="col-md-12 mx-auto">
+                            <p id="city-weather"></p>
+                        </div>
+                        <div class="col-md-12 mx-auto">
+                            <p id="city-icon"><img src="" alt=""></p>
+                        </div>
+                    </div>
+                    <!--<i class='sembol fas fa-cloud-moon' style='font-size:36px;color:paleturquoise' id="bulut"></i>
                     <i class='sembol far fa-snowflake' style='font-size:36px;color:paleturquoise' id="kar"></i>
                     <i class='sembol fas fa-cloud-rain' style='font-size:36px;color:paleturquoise' id="yagmur"></i>
                     <i class='sembol fas fa-cloud-sun' style='font-size:36px;color:paleturquoise' id="clear"></i>
-                    <i class='sembol fas fa-smog' style='font-size:36px;color:paleturquoise' id="smog"></i>
+                    <i class='sembol fas fa-smog' style='font-size:36px;color:paleturquoise' id="smog"></i></-->
 
                     <div id="windspeed">
-                        <p id="city-wind"></p>
-                        <p id="city-winddeg"></p>
-                        <b class='fas fa-wind' style='font-size:36px;color:paleturquoise' id="winddegsembol"></b>
-                        <b class='fas fa-wind' style='font-size:36px;color:paleturquoise' id="windsembol"></b>
-                    </div>
-                    <div class="row mx-auto" id="humpres">
-                        <div class="col-6">
-                            <p id="city-pressure" style="margin-left: -15px"></p>
-                            <span id="pressicon"><img src="pressure.png" alt=""></span>
-                        </div>
-                        <div class="col-6">
-                            <p id="city-humidity"></p>
-                            <span id="humidityicon"><img src="humidity.png" alt=""></span>
-                        </div>
-                    </div>
-                    <div id="sonuc">
-                        <p id="city-temp"></p>
-                        <p id="city-tempmin"></p>
-                        <p id="city-tempmax"></p>
-                        <p id="city-feels"></p>
-                        <span style='font-size:34px;' id="celcius">&#8451;</span>
-                        <span style='font-size:34px;' id="feelcelcius">&#8451;</span>
-                        <span style='font-size:34px;' id="celciusmin">&#8451;</span>
-                        <span style='font-size:34px;' id="celciusmax">&#8451;</span>
+                        <div class="weatherwinds row">
+                            <div class="windbody col-md-6">
+                                <p id="city-wind"></p>
 
+                            </div>
+                            <div class="col-md-6">
+                                <p id="city-winddeg"></p>
+                            </div>
+                        </div>
+                        <!-- <b class='fas fa-wind' style='font-size:36px' id="winddegsembol"></b>
+                        <b class='fas fa-wind' style='font-size:36px;color:paleturquoise' id="windsembol"></b></-->
+                    </div>
+                    <div class="row mx-auto mt-3" id="humpres">
+                        <div class="col-md-6">
+                            <p id="city-pressure" style="margin-left: -15px"></p>
+                            <!--<span id="pressicon"><img src="pressure.png" alt=""></span></-->
+                        </div>
+                        <div class="col-md-6">
+                            <p id="city-humidity"></p>
+                            <!--<span id="humidityicon"><img src="humidity.png" alt=""></span></-->
+                        </div>
+                    </div>
+                    <div class="tempss row mx-auto mt-3" id="sonuc">
+                        <div class="col-md-3">
+                            <p id="city-tempmin"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p id="city-tempmax"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p id="city-temp"></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p id="city-feels"></p>
+                        </div>
                     </div>
                 </div>
 
-                <div id="buton2div">
-                    <button type="submit" class="buton btn btn-primary mt-4" id="buton2">Back</button>
-                    <a href="https://www.google.com/maps/place/" target="_blank" id="locationclick"><l class='fas fa-search-location' style='color: white' id="location"></l></a>
+                <div class="buton2divs row mx-auto mt-3">
+                    <div class="col-md-9">
+                        <button type="submit" class="buton btn btn-primary mt-2" id="buton2">Back</button>
+                        <a href="https://www.google.com/maps/place/" target="_blank" id="locationclick"><l class='fas fa-search-location' style='color: white' id="location"></l></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="alltimes">
-            <!--<div class="row pt-2 mx-auto" id="timesfirst">
-                <p id="city-timezonefirst"></p>
-            </div></-->
-
-            <div class="row pt-2 mx-auto" id="times">
+        <div class="alltimes row mx-auto mt-3">
+            <div class="alltimes2 col-md-12 mx-auto mt-3">
                 <p id="city-timezone"></p>
-                <!--<p id="city-sunrise"></p></-->
+                <p id="city-hours"></p>
             </div>
+        </div>
+    </div>
+    <div class="date row mx-auto mt-3">
+        <div class="col-md-12">
+            <p id="DateNow"></p>
         </div>
     </div>
 </div>
