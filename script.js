@@ -12,6 +12,19 @@ $(document).ready(function(){
    });
 })
 
+
+$(document).ready(function(){
+   var day=new Date().getDate();
+   var month=new Date().getMonth();
+   var year=new Date().getFullYear();
+   var hour=new Date().getHours();
+   var minute=new Date().getMinutes();
+   var second=new Date().getSeconds();
+   month=month+1
+   var dates=day+"."+month+"."+year+" "+ hour+":"+minute;
+   $("#DateNow").html(dates);
+})
+
 //Bu kısım Değiştirildi Şamil ile olan Mesajlarda Default olan hali bulunmakta.
 
 function performSearch(event){
@@ -34,8 +47,11 @@ function performSearch(event){
 }
 
 function formatSearch(jsonObject){
+   $("#DateNow").hide();
+   $("#bodytwo").css("padding-bottom","2%")
+
    var city_name=jsonObject.name;
-   var city_weather=jsonObject.weather[0].main;
+   var city_weather=jsonObject.weather[0].description;
    var city_temp=jsonObject.main.temp;
    var city_tempmin=jsonObject.main.temp_min;
    var city_tempmax=jsonObject.main.temp_max;
@@ -44,38 +60,26 @@ function formatSearch(jsonObject){
    var city_feels=jsonObject.main.feels_like;
    var city_pressure=jsonObject.main.pressure;
    var city_humidity=jsonObject.main.humidity;
-   var city_timezone=jsonObject.dt;
+   var city_icon=jsonObject.weather[0].icon;
+   var city_timezone=jsonObject.timezone;
+   var city_date=jsonObject.dt;
    //var city_sunrise=jsonObject.sys.sunrise;
 
-   var date=new Date(city_timezone*1000);
+   var date=new Date();
    var timestr=date.toLocaleDateString();
-   //var city_icon=jsonObject.weather[0].icon;
-   //var celciusmaxsm=$("#celciusmax").val();
-   //$(".icon").show();
-   //$(".icon").attr("src",'http://openweathermap.org/img/wn/' + city_icon + '@2x.png')
-   //$("#times").show();
-   //$(".alltimes").show();
-   //$("#city-timezonefirst").text(date);
+   $("#city-icon img").attr("src",'http://openweathermap.org/img/wn/'+city_icon+'@4x.png')
    $(".alltimes").show();
    $("#city-timezone").text(timestr);
-   $("#pressicon img").show();
-   $("#humidityicon img").show();
-   $("#city-pressure").text(city_pressure +" Pres");
-   $("#city-humidity").text(city_humidity +"% Hum");
-   $("#celcius").show();
-   $("#feelcelcius").show();
-   $("#celciusmin").show();
-   $("#celciusmax").show();
-   $("#windsembol").show();
-   $("#winddegsembol").show();
+   $("#city-pressure").text(city_pressure +" Pres hPa");
+   $("#city-humidity").text(city_humidity +"% Hum RHhr");
    $("#city-wind").text(city_wind + " Km/H");
-   $("#city-winddeg").text(city_winddeg+" Degree");
+   $("#city-winddeg").text(city_winddeg+" WindDeg");
    $("#city-weather").text(city_weather);
-   $("#city-temp").text(city_temp);
-   $("#city-tempmin").text(city_tempmin+" Min");
-   $("#city-tempmax").text(city_tempmax+" Max");
-   $("#city-feels").text(city_feels +" Feel");
-   //$("#baslik").html(city_name);
+   $("#city-temp").text(city_temp+" Temp °C");
+   $("#city-tempmin").text(city_tempmin+" Min °C");
+   $("#city-tempmax").text(city_tempmax+" Max °C");
+   $("#city-feels").text(city_feels +" Feel °C");
+
 
    $('#body').css('background-image', 'url(https://source.unsplash.com/1600x1000/?' + city_name + ')');
 
@@ -98,6 +102,9 @@ function formatSearch(jsonObject){
       }
    })
 
+   $(".alltimes2").show();
+
+
    $("#baslik a").text(city_name);
    $(document).ready(function(){
       $("#baslik").click(function(){
@@ -105,7 +112,7 @@ function formatSearch(jsonObject){
       })
    })
 
-   $("#location").show();
+   $("#locationclick").show();
    $(document).ready(function(){
       $("#locationclick").click(function(){
          $("#locationclick").attr("href",'https://www.google.com/maps/place/ '+ city_name +'')
@@ -118,6 +125,7 @@ function formatSearch(jsonObject){
    $("#buton2").click(function(){
       location.reload();
    })
+
 
 }
 
